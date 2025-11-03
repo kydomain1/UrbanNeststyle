@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanNeststyle - Lifestyle Blog</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>UrbanNeststyle</h1>
+                <span class="tagline">Discover Your Style</span>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#" data-category="fashion">Fashion & Accessories</a>
+                        <a href="#" data-category="health">Health & Beauty</a>
+                        <a href="#" data-category="home">Home & Garden</a>
+                        <a href="#" data-category="travel">Travel & Accommodation</a>
+                        <a href="#" data-category="finance">Finance & Insurance</a>
+                        <a href="#" data-category="food">Food & Beverages</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search articles...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to UrbanNeststyle</h1>
+            <p class="hero-subtitle">Discover the latest trends in fashion, beauty, home decor, and lifestyle</p>
+            <button class="cta-button">Explore Articles</button>
+        </div>
+        <div class="hero-image">
+            <div class="floating-elements">
+                <div class="floating-card">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-leaf"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Grid -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Explore Our Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="fashion">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Fashion & Accessories</h3>
+                    <p>Latest trends, styling tips, and fashion reviews</p>
+                    <span class="article-count">15 articles</span>
+                </div>
+                <div class="category-card" data-category="health">
+                    <div class="category-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Health & Beauty</h3>
+                    <p>Wellness tips, skincare, and beauty recommendations</p>
+                    <span class="article-count">12 articles</span>
+                </div>
+                <div class="category-card" data-category="home">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home & Garden</h3>
+                    <p>Interior design, gardening, and home improvement</p>
+                    <span class="article-count">18 articles</span>
+                </div>
+                <div class="category-card" data-category="travel">
+                    <div class="category-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Travel & Accommodation</h3>
+                    <p>Travel guides, hotel reviews, and destination tips</p>
+                    <span class="article-count">10 articles</span>
+                </div>
+                <div class="category-card" data-category="finance">
+                    <div class="category-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Finance & Insurance</h3>
+                    <p>Financial advice, investment tips, and insurance guides</p>
+                    <span class="article-count">8 articles</span>
+                </div>
+                <div class="category-card" data-category="food">
+                    <div class="category-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food & Beverages</h3>
+                    <p>Recipe recommendations, restaurant reviews, and culinary tips</p>
+                    <span class="article-count">14 articles</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="featured-articles">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="fashion">Fashion</button>
+                    <button class="filter-btn" data-filter="health">Beauty</button>
+                    <button class="filter-btn" data-filter="home">Home</button>
+                    <button class="filter-btn" data-filter="travel">Travel</button>
+                    <button class="filter-btn" data-filter="finance">Finance</button>
+                    <button class="filter-btn" data-filter="food">Food</button>
+                </div>
+            </div>
+            
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Articles will be dynamically loaded here -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest lifestyle trends and tips</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UrbanNeststyle</h3>
+                    <p>Your ultimate lifestyle companion for fashion, beauty, home decor, and more.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://pinterest.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://youtube.com/@urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#" data-category="fashion">Fashion & Accessories</a></li>
+                        <li><a href="#" data-category="health">Health & Beauty</a></li>
+                        <li><a href="#" data-category="home">Home & Garden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>More Categories</h4>
+                    <ul>
+                        <li><a href="#" data-category="travel">Travel & Accommodation</a></li>
+                        <li><a href="#" data-category="finance">Finance & Insurance</a></li>
+                        <li><a href="#" data-category="food">Food & Beverages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UrbanNeststyle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
