@@ -1,6 +1,19 @@
 // Article Data
 const articlesData = [
     {
+        id: 7,
+        title: "Discover Your Style with Stitch Fix",
+        category: "fashion",
+        categoryDisplay: "Fashion & Accessories",
+        excerpt: "Learn how Stitch Fix delivers data-backed fall outfits, curated product highlights, and styling prompts perfect for early October wardrobes.",
+        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=250&fit=crop&crop=center",
+        date: "2025-10-04",
+        author: "Lena Ward",
+        readTime: "7 min read",
+        slug: "discover-your-style-with-stitch-fix",
+        content: "This guide unpacks how Stitch Fix blends human stylists with AI to build personalized fall capsules, product spotlights, and 25 quick styling prompts."
+    },
+    {
         id: 1,
         title: "10 Must-Have Fashion Accessories for Spring 2025",
         category: "fashion",
