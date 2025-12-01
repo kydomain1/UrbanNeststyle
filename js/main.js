@@ -1,6 +1,19 @@
 // Article Data
 const articlesData = [
     {
+        id: 8,
+        title: "Pro-Level Results, Beginner Ease",
+        category: "home",
+        categoryDisplay: "Home & Garden",
+        excerpt: "Discover how WeCreat laser engravers deliver professional-grade results with beginner-friendly ease. Explore Vision Pro and Lumos for your creative projects.",
+        image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=250&fit=crop&crop=center",
+        date: "2025-10-02",
+        author: "Alex Maker",
+        readTime: "6 min read",
+        slug: "pro-level-results-beginner-ease",
+        content: "Professional-grade laser engraving used to require expensive equipment and technical expertise. WeCreat has changed that with accessible machines that deliver studio-quality results."
+    },
+    {
         id: 7,
         title: "Discover Your Style with Stitch Fix",
         category: "fashion",
