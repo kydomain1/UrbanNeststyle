@@ -1,6 +1,19 @@
 // Article Data
 const articlesData = [
     {
+        id: 9,
+        title: "Charge Anywhere, Anytime",
+        category: "home",
+        categoryDisplay: "Home & Garden",
+        excerpt: "Discover how Jackery portable power stations and solar generators keep your devices charged wherever adventure takes you. Explore reliable power solutions for outdoor enthusiasts and emergency preparedness.",
+        image: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=400&h=250&fit=crop&crop=center",
+        date: "2025-10-03",
+        author: "Sarah Tech",
+        readTime: "6 min read",
+        slug: "charge-anywhere-anytime",
+        content: "In our increasingly connected world, running out of power is more than an inconvenience. Jackery portable power stations and solar generators offer solutions that keep your devices charged wherever life takes you."
+    },
+    {
         id: 8,
         title: "Pro-Level Results, Beginner Ease",
         category: "home",
