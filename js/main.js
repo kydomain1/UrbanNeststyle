@@ -2,16 +2,16 @@
 const articlesData = [
     {
         id: 10,
-        title: "Heat, Eat, Enjoy – Simple as That!",
+        title: "Erhitzen, Genießen, Fertig – So einfach!",
         category: "food",
-        categoryDisplay: "Food & Beverages",
-        excerpt: "Discover how premium frozen foods make meal preparation effortless. From gourmet entrees to delicious desserts, enjoy restaurant-quality meals at home with minimal effort.",
+        categoryDisplay: "Essen & Getränke",
+        excerpt: "Entdecken Sie, wie Premium-Tiefkühlkost die Zubereitung von Mahlzeiten mühelos macht. Von Gourmet-Hauptgerichten bis zu köstlichen Desserts – genießen Sie Restaurant-Qualität zu Hause mit minimalem Aufwand.",
         image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&h=250&fit=crop&crop=center",
         date: "2025-10-05",
-        author: "Culinary Expert",
-        readTime: "5 min read",
+        author: "Kulinarischer Experte",
+        readTime: "5 Min. Lesezeit",
         slug: "heat-eat-enjoy-simple-as-that",
-        content: "In today's fast-paced world, finding time to prepare delicious, nutritious meals can be challenging. But what if you could enjoy restaurant-quality food at home with just minutes of preparation? Premium frozen foods have revolutionized the way we think about convenience dining."
+        content: "In der heutigen schnelllebigen Welt kann es eine Herausforderung sein, Zeit für die Zubereitung köstlicher, nahrhafter Mahlzeiten zu finden. Aber was wäre, wenn Sie Restaurant-Qualität zu Hause mit nur wenigen Minuten Vorbereitung genießen könnten? Premium-Tiefkühlkost hat die Art und Weise revolutioniert, wie wir über praktisches Essen denken."
     },
     {
         id: 9,
