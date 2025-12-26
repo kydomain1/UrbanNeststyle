@@ -1,6 +1,19 @@
 // Article Data
 const articlesData = [
     {
+        id: 11,
+        title: "Twoja Następna Przygoda Zaczyna Się od Biletu Buser",
+        category: "travel",
+        categoryDisplay: "Podróże i Noclegi",
+        excerpt: "Odkryj, jak Buser rewolucjonizuje podróże autobusowe w Brazylii. Rezerwuj tanie, wygodne bilety autobusowe online i odkrywaj miejsca w całym kraju z łatwością.",
+        image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=400&h=250&fit=crop&crop=center",
+        date: "2025-10-03",
+        author: "Ekspert Podróży",
+        readTime: "6 min czytania",
+        slug: "your-next-adventure-starts-with-buser-ticket",
+        content: "Podróżowanie po Brazylii nigdy nie było łatwiejsze ani bardziej przystępne cenowo. Buser, wiodąca platforma rezerwacji biletów autobusowych w Brazylii, rewolucjonizuje sposób, w jaki ludzie odkrywają ten rozległy i piękny kraj."
+    },
+    {
         id: 10,
         title: "Erhitzen, Genießen, Fertig – So einfach!",
         category: "food",
