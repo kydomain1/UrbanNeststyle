@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - UrbanNeststyle</title>
+    <meta name="description" content="Search results for UrbanNeststyle articles, reviews, and lifestyle content.">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <h1>UrbanNeststyle</h1>
+                    <span class="tagline">Discover Your Style</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html" data-category="fashion">Fashion & Accessories</a>
+                        <a href="index.html" data-category="health">Health & Beauty</a>
+                        <a href="index.html" data-category="home">Home & Garden</a>
+                        <a href="index.html" data-category="travel">Travel & Accommodation</a>
+                        <a href="index.html" data-category="finance">Finance & Insurance</a>
+                        <a href="index.html" data-category="food">Food & Beverages</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search articles...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Header -->
+    <section class="search-hero">
+        <div class="container">
+            <div class="search-header-content">
+                <h1>Search Results</h1>
+                <div class="search-form-main">
+                    <input type="text" id="mainSearchInput" placeholder="What are you looking for?">
+                    <button id="mainSearchBtn"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="search-results-section">
+        <div class="container">
+            <!-- Search Info Bar -->
+            <div class="search-info">
+                <div class="search-stats">
+                    <span id="searchQuery"></span>
+                    <span id="resultsCount"></span>
+                </div>
+                <div class="search-filters">
+                    <span>Filter by:</span>
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="fashion">Fashion</button>
+                    <button class="filter-btn" data-filter="health">Beauty</button>
+                    <button class="filter-btn" data-filter="home">Home</button>
+                    <button class="filter-btn" data-filter="travel">Travel</button>
+                    <button class="filter-btn" data-filter="finance">Finance</button>
+                    <button class="filter-btn" data-filter="food">Food</button>
+                </div>
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results" id="searchResults">
+                <!-- Results will be populated by JavaScript -->
+            </div>
+
+            <!-- No Results -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-content">
+                    <i class="fas fa-search"></i>
+                    <h3>No articles found</h3>
+                    <p>We couldn't find any articles matching your search. Try different keywords or browse our categories.</p>
+                    <div class="suggested-searches">
+                        <h4>Popular searches:</h4>
+                        <div class="search-suggestions">
+                            <button class="suggestion-btn" data-search="fashion">Fashion</button>
+                            <button class="suggestion-btn" data-search="skincare">Skincare</button>
+                            <button class="suggestion-btn" data-search="home decor">Home Decor</button>
+                            <button class="suggestion-btn" data-search="travel">Travel</button>
+                            <button class="suggestion-btn" data-search="coffee">Coffee</button>
+                            <button class="suggestion-btn" data-search="plants">Plants</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <div class="search-loading" id="searchLoading" style="display: none;">
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Searching articles...</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Related Categories -->
+    <section class="related-categories">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card" onclick="window.location.href='index.html#fashion'">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Fashion & Accessories</h3>
+                    <p>Latest trends and styling tips</p>
+                </div>
+                <div class="category-card" onclick="window.location.href='index.html#health'">
+                    <div class="category-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Health & Beauty</h3>
+                    <p>Wellness and beauty guides</p>
+                </div>
+                <div class="category-card" onclick="window.location.href='index.html#home'">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home & Garden</h3>
+                    <p>Interior design and gardening</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UrbanNeststyle</h3>
+                    <p>Your ultimate lifestyle companion for fashion, beauty, home decor, and more.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://pinterest.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://youtube.com/@urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="index.html#fashion">Fashion & Accessories</a></li>
+                        <li><a href="index.html#health">Health & Beauty</a></li>
+                        <li><a href="index.html#home">Home & Garden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>More Categories</h4>
+                    <ul>
+                        <li><a href="index.html#travel">Travel & Accommodation</a></li>
+                        <li><a href="index.html#finance">Finance & Insurance</a></li>
+                        <li><a href="index.html#food">Food & Beverages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UrbanNeststyle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+    <style>
+        /* Search Page Specific Styles */
+        .search-hero {
+            background: linear-gradient(135deg, var(--warm-beige) 0%, rgba(167, 196, 160, 0.1) 100%);
+            padding: var(--spacing-2xl) 0;
+        }
+        
+        .search-header-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .search-hero h1 {
+            font-size: var(--font-size-3xl);
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .search-form-main {
+            display: flex;
+            gap: var(--spacing-md);
+            background: var(--white);
+            padding: var(--spacing-sm);
+            border-radius: var(--radius-full);
+            box-shadow: 0 8px 25px var(--shadow-light);
+        }
+        
+        .search-form-main input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: var(--spacing-md);
+            font-size: var(--font-size-base);
+            border-radius: var(--radius-full);
+        }
+        
+        .search-form-main button {
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: var(--spacing-md) var(--spacing-xl);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        
+        .search-form-main button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px var(--shadow-medium);
+        }
+        
+        .search-results-section {
+            padding: var(--spacing-2xl) 0;
+            background: var(--white);
+        }
+        
+        .search-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-2xl);
+            padding: var(--spacing-lg);
+            background: var(--warm-beige);
+            border-radius: var(--radius-lg);
+            flex-wrap: wrap;
+            gap: var(--spacing-lg);
+        }
+        
+        .search-stats {
+            font-size: var(--font-size-base);
+            color: var(--text-secondary);
+        }
+        
+        .search-stats strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .search-filters {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
+        }
+        
+        .search-filters span {
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-right: var(--spacing-md);
+        }
+        
+        .search-results {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .search-result-card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: 0 8px 25px var(--shadow-light);
+            transition: all var(--transition-normal);
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        .search-result-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px var(--shadow-medium);
+            border-color: var(--primary-color);
+        }
+        
+        .search-result-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+        
+        .search-result-card:hover .search-result-image {
+            transform: scale(1.05);
+        }
+        
+        .search-result-content {
+            padding: var(--spacing-xl);
+        }
+        
+        .search-result-category {
+            font-size: var(--font-size-xs);
+            color: var(--primary-color);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .search-result-title {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.3;
+        }
+        
+        .search-result-excerpt {
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.5;
+        }
+        
+        .search-result-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: var(--spacing-3xl) 0;
+        }
+        
+        .no-results-content i {
+            font-size: 4rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .no-results-content h3 {
+            font-size: var(--font-size-2xl);
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .no-results-content p {
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-2xl);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .suggested-searches h4 {
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .search-suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            justify-content: center;
+        }
+        
+        .suggestion-btn {
+            background: var(--warm-beige);
+            color: var(--text-primary);
+            border: 2px solid var(--shadow-light);
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-weight: 500;
+        }
+        
+        .suggestion-btn:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+        
+        .search-loading {
+            text-align: center;
+            padding: var(--spacing-3xl) 0;
+        }
+        
+        .loading-spinner i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .loading-spinner p {
+            color: var(--text-secondary);
+            font-size: var(--font-size-lg);
+        }
+        
+        .related-categories {
+            padding: var(--spacing-2xl) 0;
+            background: var(--warm-beige);
+        }
+        
+        .related-categories .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-xl);
+        }
+        
+        /* Highlight search terms */
+        .search-highlight {
+            background: var(--accent-color);
+            padding: 0.1em 0.2em;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .search-form-main {
+                flex-direction: column;
+                gap: var(--spacing-sm);
+            }
+            
+            .search-info {
+                flex-direction: column;
+                align-items: stretch;
+                text-align: center;
+            }
+            
+            .search-results {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+            
+            .search-suggestions {
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</body>
+</html>

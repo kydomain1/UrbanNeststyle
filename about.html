@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - UrbanNeststyle</title>
+    <meta name="description" content="Learn about UrbanNeststyle's mission to bring you the latest in lifestyle trends, from fashion and beauty to home decor and travel inspiration.">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <h1>UrbanNeststyle</h1>
+                    <span class="tagline">Discover Your Style</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html" data-category="fashion">Fashion & Accessories</a>
+                        <a href="index.html" data-category="health">Health & Beauty</a>
+                        <a href="index.html" data-category="home">Home & Garden</a>
+                        <a href="index.html" data-category="travel">Travel & Accommodation</a>
+                        <a href="index.html" data-category="finance">Finance & Insurance</a>
+                        <a href="index.html" data-category="food">Food & Beverages</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search articles...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <h1>About UrbanNeststyle</h1>
+                <p class="hero-subtitle">Your trusted companion for discovering authentic lifestyle trends and inspiration</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-content">
+                <div class="mission-text">
+                    <h2>Our Mission</h2>
+                    <p>At UrbanNeststyle, we believe that great style and meaningful living should be accessible to everyone. Our mission is to curate and share authentic lifestyle content that inspires you to create your own unique aesthetic while making conscious choices for yourself and the planet.</p>
+                    
+                    <p>We're passionate about discovering hidden gems, sustainable practices, and timeless trends that transcend fleeting fashion cycles. From mindful beauty routines to thoughtfully designed living spaces, we celebrate the art of living well.</p>
+                    
+                    <div class="mission-stats">
+                        <div class="stat-item">
+                            <h3>50K+</h3>
+                            <p>Monthly Readers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>200+</h3>
+                            <p>Expert Contributors</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>6</h3>
+                            <p>Lifestyle Categories</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>3+</h3>
+                            <p>Years of Excellence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=600&fit=crop&crop=center" alt="Team collaboration" class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Authenticity</h3>
+                    <p>We believe in honest reviews, genuine recommendations, and transparent partnerships. Our content reflects real experiences and tested advice you can trust.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainability</h3>
+                    <p>We prioritize eco-conscious brands, sustainable practices, and timeless choices that benefit both you and the environment for years to come.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Inclusivity</h3>
+                    <p>Style has no boundaries. We celebrate diverse perspectives, body types, budgets, and lifestyle choices, ensuring everyone feels represented and inspired.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>We're always exploring emerging trends, new techniques, and creative solutions that push the boundaries of lifestyle content and user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face" alt="Sarah Chen" class="team-photo">
+                    <div class="team-info">
+                        <h3>Sarah Chen</h3>
+                        <p class="team-role">Editor-in-Chief</p>
+                        <p>Former Vogue editor with 10+ years in lifestyle journalism. Sarah brings a keen eye for emerging trends and sustainable fashion to our editorial vision.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face" alt="Marcus Johnson" class="team-photo">
+                    <div class="team-info">
+                        <h3>Marcus Johnson</h3>
+                        <p class="team-role">Creative Director</p>
+                        <p>Award-winning designer and photographer who ensures every visual element reflects our commitment to beautiful, accessible lifestyle content.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Elena Rodriguez" class="team-photo">
+                    <div class="team-info">
+                        <h3>Elena Rodriguez</h3>
+                        <p class="team-role">Lifestyle Writer</p>
+                        <p>Wellness expert and travel enthusiast who specializes in sustainable living practices and authentic cultural experiences around the world.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop&crop=face" alt="Dr. Amelia Park" class="team-photo">
+                    <div class="team-info">
+                        <h3>Dr. Amelia Park</h3>
+                        <p class="team-role">Beauty & Wellness Expert</p>
+                        <p>Certified dermatologist and holistic wellness practitioner who brings scientific expertise to our beauty and health content.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>Our Story</h2>
+                    <p>UrbanNeststyle began in 2022 when a group of lifestyle enthusiasts realized there was a gap in the market for authentic, accessible, and sustainable lifestyle content. We were tired of seeing the same mass-produced advice and cookie-cutter recommendations.</p>
+                    
+                    <p>Starting from a small apartment in Brooklyn, our founders began curating content that reflected real experiences, tested products, and genuine discoveries. What started as a passion project quickly grew into a trusted resource for thousands of readers seeking authentic lifestyle inspiration.</p>
+                    
+                    <p>Today, UrbanNeststyle is home to a diverse community of writers, experts, and lifestyle enthusiasts from around the world. We're proud to maintain our original mission while expanding our reach and impact.</p>
+                    
+                    <div class="story-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Founded in 2022</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Global Community</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-award"></i>
+                            <span>Multiple Awards</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-images">
+                    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=300&h=200&fit=crop&crop=center" alt="Brooklyn office" class="story-image">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=300&h=200&fit=crop&crop=center" alt="Team meeting" class="story-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <h2 class="section-title">Trusted Partners</h2>
+            <p class="partners-intro">We collaborate with ethical brands and sustainable companies that share our values</p>
+            <div class="partners-logos">
+                <div class="partner-logo">
+                    <span>Sustainable Fashion Co.</span>
+                </div>
+                <div class="partner-logo">
+                    <span>Organic Beauty Labs</span>
+                </div>
+                <div class="partner-logo">
+                    <span>Eco Home Design</span>
+                </div>
+                <div class="partner-logo">
+                    <span>Mindful Travel Agency</span>
+                </div>
+                <div class="partner-logo">
+                    <span>Artisan Coffee Collective</span>
+                </div>
+                <div class="partner-logo">
+                    <span>Green Living Magazine</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our Community</h2>
+                <p>Be part of a growing community that values authentic style, sustainable choices, and meaningful living</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-button primary">Get in Touch</a>
+                    <a href="index.html" class="cta-button secondary">Read Our Articles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UrbanNeststyle</h3>
+                    <p>Your ultimate lifestyle companion for fashion, beauty, home decor, and more.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://pinterest.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://youtube.com/@urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="index.html#fashion">Fashion & Accessories</a></li>
+                        <li><a href="index.html#health">Health & Beauty</a></li>
+                        <li><a href="index.html#home">Home & Garden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>More Categories</h4>
+                    <ul>
+                        <li><a href="index.html#travel">Travel & Accommodation</a></li>
+                        <li><a href="index.html#finance">Finance & Insurance</a></li>
+                        <li><a href="index.html#food">Food & Beverages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UrbanNeststyle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/search-redirect.js"></script>
+    <style>
+        /* Additional styles for About page */
+        .nav-link.active {
+            color: var(--primary-color) !important;
+        }
+        
+        .about-hero {
+            background: linear-gradient(135deg, var(--warm-beige) 0%, rgba(167, 196, 160, 0.1) 100%);
+            padding: var(--spacing-3xl) 0;
+            text-align: center;
+        }
+        
+        .about-hero h1 {
+            font-size: var(--font-size-4xl);
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .mission-section {
+            padding: var(--spacing-3xl) 0;
+            background: var(--white);
+        }
+        
+        .mission-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var(--spacing-3xl);
+            align-items: center;
+        }
+        
+        .mission-text h2 {
+            font-size: var(--font-size-3xl);
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .mission-text p {
+            font-size: var(--font-size-lg);
+            line-height: 1.7;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .mission-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-2xl);
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: var(--spacing-lg);
+            background: var(--warm-beige);
+            border-radius: var(--radius-lg);
+        }
+        
+        .stat-item h3 {
+            font-size: var(--font-size-2xl);
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .about-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: var(--radius-xl);
+        }
+        
+        .values-section {
+            padding: var(--spacing-3xl) 0;
+            background: var(--warm-beige);
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-2xl);
+        }
+        
+        .value-card {
+            background: var(--white);
+            padding: var(--spacing-2xl);
+            border-radius: var(--radius-xl);
+            text-align: center;
+            box-shadow: 0 5px 15px var(--shadow-light);
+            transition: transform var(--transition-normal);
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--spacing-lg);
+            color: var(--white);
+            font-size: var(--font-size-2xl);
+        }
+        
+        .value-card h3 {
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .team-section {
+            padding: var(--spacing-3xl) 0;
+            background: var(--white);
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-2xl);
+        }
+        
+        .team-member {
+            text-align: center;
+            padding: var(--spacing-xl);
+            background: var(--warm-beige);
+            border-radius: var(--radius-xl);
+        }
+        
+        .team-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: var(--radius-full);
+            object-fit: cover;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .team-role {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .team-social a {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+        }
+        
+        .team-social a:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        .story-section {
+            padding: var(--spacing-3xl) 0;
+            background: var(--warm-beige);
+        }
+        
+        .story-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var(--spacing-3xl);
+        }
+        
+        .story-text h2 {
+            font-size: var(--font-size-3xl);
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .story-highlights {
+            display: flex;
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-xl);
+        }
+        
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .story-images {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+        }
+        
+        .story-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+        }
+        
+        .partners-section {
+            padding: var(--spacing-3xl) 0;
+            background: var(--white);
+            text-align: center;
+        }
+        
+        .partners-intro {
+            color: var(--text-secondary);
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .partners-logos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-xl);
+        }
+        
+        .partner-logo {
+            padding: var(--spacing-xl);
+            background: var(--warm-beige);
+            border-radius: var(--radius-lg);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .cta-section {
+            padding: var(--spacing-3xl) 0;
+            background: linear-gradient(135deg, rgba(228, 194, 198, 0.8), rgba(167, 196, 160, 0.8));
+            text-align: center;
+            color: var(--text-primary);
+        }
+        
+        .cta-content h2 {
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .cta-content p {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--spacing-2xl);
+            color: var(--text-secondary);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: var(--spacing-lg);
+            justify-content: center;
+        }
+        
+        .cta-button {
+            padding: var(--spacing-md) var(--spacing-2xl);
+            border-radius: var(--radius-full);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all var(--transition-normal);
+        }
+        
+        .cta-button.primary {
+            background: var(--primary-color);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(180, 167, 193, 0.3);
+        }
+        
+        .cta-button.secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+        
+        .cta-button.primary:hover {
+            background: var(--secondary-color);
+            box-shadow: 0 8px 25px rgba(180, 167, 193, 0.4);
+        }
+        
+        .cta-button.secondary:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            box-shadow: 0 5px 15px rgba(180, 167, 193, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .mission-content,
+            .story-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .mission-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .story-highlights {
+                flex-direction: column;
+                gap: var(--spacing-md);
+            }
+        }
+    </style>
+</body>
+</html>

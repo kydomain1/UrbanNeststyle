@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - UrbanNeststyle</title>
+    <meta name="description" content="Get in touch with the UrbanNeststyle team. We'd love to hear from you about collaborations, feedback, or any questions you may have.">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <h1>UrbanNeststyle</h1>
+                    <span class="tagline">Discover Your Style</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html" data-category="fashion">Fashion & Accessories</a>
+                        <a href="index.html" data-category="health">Health & Beauty</a>
+                        <a href="index.html" data-category="home">Home & Garden</a>
+                        <a href="index.html" data-category="travel">Travel & Accommodation</a>
+                        <a href="index.html" data-category="finance">Finance & Insurance</a>
+                        <a href="index.html" data-category="food">Food & Beverages</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search articles...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1>Get in Touch</h1>
+                <p class="hero-subtitle">We'd love to hear from you! Whether you have questions, feedback, or collaboration ideas, don't hesitate to reach out.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Connect</h2>
+                    <p>Ready to start a conversation? We're here to help with any questions about our content, potential partnerships, or just to chat about lifestyle trends!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Email Us</h3>
+                                <p>hello@urbanneststyle.com</p>
+                                <span>We typically respond within 24 hours</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Call Us</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <span>Monday - Friday, 9AM - 6PM EST</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Visit Us</h3>
+                                <p>123 Creative Street<br>Brooklyn, NY 11201</p>
+                                <span>By appointment only</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Follow Us</h3>
+                                <p>Stay connected on social media</p>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send us a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="press">Press & Media</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us more about your inquiry..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Yes, I'd like to receive the UrbanNeststyle newsletter with lifestyle tips and updates
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="terms-of-service.html" target="_blank">Terms of Service</a> *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How can I contribute content to UrbanNeststyle?</h3>
+                    <p>We're always looking for passionate writers and content creators! Please send us your portfolio and story ideas via our contact form, selecting "Collaboration" as your topic.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you accept product reviews and brand partnerships?</h3>
+                    <p>We carefully evaluate brand partnerships that align with our values of authenticity and sustainability. Please include detailed information about your brand and products when reaching out.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How often do you publish new content?</h3>
+                    <p>We publish new articles 3-4 times per week, covering all our lifestyle categories. Subscribe to our newsletter to stay updated on the latest posts.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I republish UrbanNeststyle articles?</h3>
+                    <p>Please contact us for permission before republishing any content. We're happy to discuss syndication opportunities and proper attribution requirements.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer consulting services?</h3>
+                    <p>Our team provides lifestyle consulting services for select clients. Please describe your project needs, and we'll let you know if it's something we can help with.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I advertise on UrbanNeststyle?</h3>
+                    <p>We offer various advertising options for brands that align with our editorial values. Contact us for our media kit and advertising guidelines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Stay in the Loop</h3>
+                <p>Join our community of lifestyle enthusiasts and get weekly inspiration delivered to your inbox</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UrbanNeststyle</h3>
+                    <p>Your ultimate lifestyle companion for fashion, beauty, home decor, and more.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://pinterest.com/urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://youtube.com/@urbanneststyle" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="index.html#fashion">Fashion & Accessories</a></li>
+                        <li><a href="index.html#health">Health & Beauty</a></li>
+                        <li><a href="index.html#home">Home & Garden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>More Categories</h4>
+                    <ul>
+                        <li><a href="index.html#travel">Travel & Accommodation</a></li>
+                        <li><a href="index.html#finance">Finance & Insurance</a></li>
+                        <li><a href="index.html#food">Food & Beverages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UrbanNeststyle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/search-redirect.js"></script>
+    <script>
+        // Contact form functionality
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            const privacy = document.getElementById('privacy').checked;
+            
+            if (!name || !email || !subject || !message || !privacy) {
+                alert('Please fill in all required fields and accept our privacy policy.');
+                return;
+            }
+            
+            // Simulate form submission
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+    </script>
+    <style>
+        /* Additional styles for Contact page */
+        .nav-link.active {
+            color: var(--primary-color) !important;
+        }
+        
+        .contact-hero {
+            background: linear-gradient(135deg, var(--warm-beige) 0%, rgba(167, 196, 160, 0.1) 100%);
+            padding: var(--spacing-3xl) 0;
+            text-align: center;
+        }
+        
+        .contact-hero h1 {
+            font-size: var(--font-size-4xl);
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .contact-form-section {
+            padding: var(--spacing-3xl) 0;
+            background: var(--white);
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-3xl);
+        }
+        
+        .contact-info h2 {
+            font-size: var(--font-size-3xl);
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .contact-info p {
+            font-size: var(--font-size-lg);
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-2xl);
+            line-height: 1.6;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xl);
+        }
+        
+        .contact-method {
+            display: flex;
+            gap: var(--spacing-lg);
+            padding: var(--spacing-lg);
+            background: var(--warm-beige);
+            border-radius: var(--radius-lg);
+        }
+        
+        .method-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: var(--font-size-xl);
+            flex-shrink: 0;
+        }
+        
+        .method-info h3 {
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .method-info p {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+            margin-top: 0;
+        }
+        
+        .method-info span {
+            color: var(--text-secondary);
+            font-size: var(--font-size-sm);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-sm);
+        }
+        
+        .social-links a {
+            width: 35px;
+            height: 35px;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+        }
+        
+        .social-links a:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .contact-form-container {
+            background: var(--warm-beige);
+            padding: var(--spacing-2xl);
+            border-radius: var(--radius-xl);
+        }
+        
+        .contact-form h3 {
+            font-size: var(--font-size-2xl);
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-xl);
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: var(--spacing-md);
+            border: 2px solid var(--shadow-light);
+            border-radius: var(--radius-lg);
+            background: var(--white);
+            font-size: var(--font-size-base);
+            transition: border-color var(--transition-fast);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-md);
+        }
+        
+        .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+            cursor: pointer;
+            line-height: 1.5;
+        }
+        
+        .checkbox-label input[type="checkbox"] {
+            width: auto;
+            margin: 0;
+        }
+        
+        .checkbox-label a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .checkbox-label a:hover {
+            text-decoration: underline;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: var(--spacing-lg) var(--spacing-xl);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-full);
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-sm);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px var(--shadow-medium);
+        }
+        
+        .submit-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .faq-section {
+            padding: var(--spacing-3xl) 0;
+            background: var(--warm-beige);
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-2xl);
+        }
+        
+        .faq-item {
+            background: var(--white);
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            box-shadow: 0 5px 15px var(--shadow-light);
+        }
+        
+        .faq-item h3 {
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-md);
+            font-size: var(--font-size-lg);
+        }
+        
+        .faq-item p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-xl);
+            }
+            
+            .contact-method {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .method-icon {
+                align-self: center;
+            }
+            
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
